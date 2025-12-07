@@ -54,7 +54,7 @@ app.post('/data', (req, res)=>{
         res.status(500).json({ error: error.message });
     }
 })
-
-app.listen(5000, ()=>{
-    console.log("Server started");
+const PORT = 5000;
+app.listen(PORT, ()=>{
+    console.log(`Server started on port : ${PORT}`);
 });
